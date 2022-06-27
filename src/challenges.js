@@ -19,31 +19,31 @@ function calcArea(base, height) {
 
 function splitSentence(param1) {
   let palavras = param1.split(' ');
-  if (param1 === 'go Trybe') {
     return palavras;
-  }
-  if (param1 === 'Vamo que vamo', 2) {
-    return palavras;
-  }
-  if (param1 === 'foguete') {
-      return palavras;
-    }
-  }
+}
 
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(param1) {
+  let resultado = param1[param1.length-1] + ', ' + param1[0];
+  return resultado;
 }
 
+
+
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  wins = wins * 3;
+  ties = ties * 1;
+  let resultado = wins + ties;
+  return resultado;
+  
 }
+
 
 // Desafio 6
 function highestCount() {
-  // seu código aqui
+  
 }
 
 // Desafio 7
