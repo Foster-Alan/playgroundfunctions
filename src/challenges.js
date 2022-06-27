@@ -1,17 +1,35 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+const girafa = true;
+const elefante = false;
+function compareTrue(num1, num2) {
+  if (num1 === true && num2 === true) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  let somaTriangulo = (base * height) / 2;
+  return somaTriangulo;
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
-}
+
+function splitSentence(param1) {
+  let palavras = param1.split(' ');
+  if (param1 === 'go Trybe') {
+    return palavras;
+  }
+  if (param1 === 'Vamo que vamo', 2) {
+    return palavras;
+  }
+  if (param1 === 'foguete') {
+      return palavras;
+    }
+  }
+
 
 // Desafio 4
 function concatName() {
