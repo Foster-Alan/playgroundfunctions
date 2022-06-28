@@ -63,7 +63,7 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz(param1) { 
+function fizzBuzz(param1) {
   let resultado = [];
   for (let i = 0; i < param1.length; i += 1) {
     if (param1[i] % 3 === 0 && param1[i] % 5 === 0) {
@@ -77,28 +77,54 @@ function fizzBuzz(param1) {
     }
   }
   return resultado;
-  
 }
-console.log(fizzBuzz([15, 3, 5, 1, 10, 50]))
-
-
-
-
-
- 
+console.log(fizzBuzz([15, 3, 5, 1, 10, 50]));
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(param1) {
+  let subA = param1.replace(/a/g, '1');
+  let subE = subA.replace(/e/g, '2');
+  let subI = subE.replace(/i/g, '3');
+  let subO = subI.replace(/o/g, '4');
+  let subU = subO.replace(/u/g, '5');
+
+  return subU;
 }
-function decode() {
-  // seu código aqui
+function decode(param2) {
+  let sub1 = param2.replace(/1/g, 'a');
+  let sub2 = sub1.replace(/2/g, 'e');
+  let sub3 = sub2.replace(/3/g, 'i');
+  let sub4 = sub3.replace(/4/g, 'o');
+  let sub5 = sub4.replace(/5/g, 'u');
+
+  return sub5;
 }
 
+console.log(encode('hello'));
+console.log(decode('h2ll4'));
+
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(param1, param2) {
+  let resultado = [];
+  let vazio = 'Vazio!';
+  param1 = param1.sort();
+  if (param1.length !== 0) {
+  for (i = 0; i < param1.length; i += 1) {
+  let tecnologiaENome = {
+    tech: param1[i],
+    name: param2,
+  }
+  resultado.push(tecnologiaENome);
+  }
+  return resultado;
 }
+else {
+  return vazio;
+} 
+}
+
+
+
 
 module.exports = {
   calcArea,
